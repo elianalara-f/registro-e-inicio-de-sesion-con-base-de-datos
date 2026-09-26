@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+    background-image: url('FONDOO.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 20px;
+    padding: 20px;
+}
+
+
+.formulario-registrarse,
+.formulario-iniciar-sesion {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/*titulos*/
+h2 {
+    color: #1a1a1a;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/*formularios*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #c4004e;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+/*botones*/
+button {
+    background-color: #c4004e;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #c4004e;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/*mensajes y notificaciones*/
+#mensaje,
+#mensaje-protegido {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*para ocultar el elemento*/
+.oculto { 
+    display: none !important;
+}
+
+/*estilo para los enlaces que se alternan*/
+.texto-cambio {
+    margin-top: 15px;
+    font-size: 0.88rem;
+    text-align: center;
+    color: #666;
+}
+
+.texto-cambio a {
+    color: #c4004e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.texto-cambio a:hover {
+    text-decoration: underline;
+}
